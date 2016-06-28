@@ -1,0 +1,18 @@
+{
+  "name": "cordova-plugin-crash-handler",
+  "version": "0.0.1",
+  "cordova_name": "CrashHandler",
+  "description": "Global charsh error handling",
+  "license": "MIT",
+  "repo": "",
+  "issue": "",
+  "keywords": [
+    "cordova",
+    "device"
+  ],
+  "platforms": [
+    "android"
+  ],
+  "engines": [],
+  "englishdoc": ""
+}
