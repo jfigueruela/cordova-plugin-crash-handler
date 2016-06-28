@@ -3,25 +3,35 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-crash-handler"
         version="0.0.1">
+
   <name>CrashHandler</name>
   <description>Global charsh error handling</description>
+  <author>José Figueruela Fernández - jfigueruela@gmail.com</author>
   <license>MIT</license>
-  <keywords>cordova,crash,error,handling</keywords>
-  <repo></repo>
-  <issue></issue>
 
-  <js-module name="CrashHandler" src="www/CrashHandler.js">
+  <repo>https://github.com/jfigueruela/cordova-plugin-crash-handler</repo>
+  <issue>https://github.com/jfigueruela/cordova-plugin-crash-handler/issues</issue>
+
+  <keywords>cordova,crash,error,handling</keywords>
+
+  <engines>
+    <engine name="cordova-ios" version=">=3.8.0" />
+  </engines>
+
+
+  <js-module src="www/CrashHandler.js" name="CrashHandler" >
     <clobbers target="CrashHandler" />
   </js-module>
 
   <!-- android -->
   <platform name="android">
-    <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="CrashHandler" >
-        <param name="android-package" value="CrashHandler"/>
+    <source-file src="src/android/CrashHandler.java" target-dir="src/com/cordova/crashhandler" />
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="CrashHandler">
+        <param name="android-package" value="com.cordova.CrashHandler"/>
       </feature>
     </config-file>
-    <source-file src="src/android/CrashHandler" target-dir="src/" />
   </platform>
 
 </plugin>
