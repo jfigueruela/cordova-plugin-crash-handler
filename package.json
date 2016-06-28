@@ -1,18 +1,39 @@
 {
   "name": "cordova-plugin-crash-handler",
   "version": "0.0.1",
-  "cordova_name": "CrashHandler",
-  "description": "Global charsh error handling",
+  "description": "Cordova plugin to global application crash error handling",
   "license": "MIT",
-  "repo": "",
-  "issue": "",
-  "keywords": [
-    "cordova",
-    "device"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfigueruela/cordova-plugin-crash-handler"
+  },
+  "bugs": {
+    "url": "https://github.com/jfigueruela/cordova-plugin-crash-handler/issues"
+  },
+  "engines": [
+    {
+      "cordova": ">=3.0.0"
+    },
+    {
+      "node": ">=0.12"
+    }
   ],
-  "platforms": [
-    "android"
+  "cordova": {
+    "id": "cordova-plugin-crash-handler",
+    "platforms": [
+      "ios",
+      "android",
+      "wp8"
+    ]
+  },
+  "keywords": ["cordova", "crash", "error", "handling"],
+  "author": {
+    "name": "José Figueruela Fernández",
+    "email": "jfigueruela@gmail.com",
+    "url": "https://github.com/jfigueruela"
+  },
+  "contributors": [
   ],
-  "engines": [],
-  "englishdoc": ""
+  "devDependencies": {
+  }
 }
